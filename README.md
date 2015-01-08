@@ -1,8 +1,6 @@
 # Casper
 
-The default theme for [Ghost](http://github.com/tryghost/ghost/).
-
-To download, visit the [releases](https://github.com/TryGhost/Casper/releases) page.
+Casper fork designed specifically for the [me2 nation blogs](http://blog.me2nation.com) to add more functionality for our purposes. 
 
 ## Copyright & License
 
