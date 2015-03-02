@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html>
-<head>
+  <head>
     {{! Document Settings }}
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -29,25 +29,32 @@
     <link href="https://cdn-images.mailchimp.com/embedcode/classic-081711.css" rel="stylesheet" type="text/css">
 
     <style>
-    #mc_embed_signup { 
-        background:#fff; 
-        clear:left; 
-        font:14px Helvetica,Arial,sans-serif; 
-        width: 600px;
-        margin: 0 auto;
-    }
+      #mc_embed_signup { 
+      background:#fff; 
+      clear:left; 
+      font:14px Helvetica,Arial,sans-serif; 
+      width: 600px;
+      margin: 0 auto;
+      }
     </style>
     <!-- end mailchimp -->
-</head>
-<body class="{{body_class}}">
+  </head>
+  <body class="{{body_class}} nav-closed">
 
-    {{! Everything else gets inserted here }}
-    {{{body}}}
+    {{navigation}}
 
+    <div class="site-wrapper">
+
+      {{! Everything else gets inserted here }}
+      {{{body}}}
+
+      <footer class="site-footer clearfix">
         <section><a href="http://me2nation.com/privacy_policy.html">Privacy Policy</a></section>
         <section class="copyright"><a href="{{@blog.url}}">{{@blog.title}}</a> &copy; {{date format="YYYY"}}</section>
         <section class="poweredby">Proudly published with <a href="https://ghost.org">Ghost</a></section>
-    </footer>
+      </footer>
+
+    </div>
 
     {{! Ghost outputs important scripts and data with this tag }}
     {{ghost_foot}}
@@ -56,5 +63,5 @@
     <script type="text/javascript" src="{{asset "js/jquery.fitvids.js"}}"></script>
     <script type="text/javascript" src="{{asset "js/index.js"}}"></script>
 
-</body>
+  </body>
 </html>
